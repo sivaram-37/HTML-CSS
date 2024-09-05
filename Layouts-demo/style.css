@@ -188,14 +188,11 @@ aside {
 	float: right;
 }
 
-
-
 footer {
 	clear: both;
 	background-color: #ffe600;
 } */
 
-/* Flex */
 .main-header {
 	display: flex;
 	justify-content: space-between;
@@ -209,12 +206,6 @@ footer {
 	margin-bottom: 20px;
 }
 
-main {
-	display: flex;
-	align-items: flex-start;
-	gap: 75px;
-}
-
 aside {
 	flex: 0 0 300px;
 }
@@ -222,4 +213,29 @@ aside {
 .related-post {
 	display: flex;
 	margin-bottom: 20px;
+}
+
+/* Flex */
+/* 
+main {
+	display: flex;
+	align-items: flex-start;
+	gap: 75px;
+}
+*/
+
+/* GRID */
+.container {
+	display: grid;
+	align-items: start;
+	grid-template-columns: 1fr 300px;
+	column-gap: 75px;
+}
+
+.main-header {
+	grid-column: 1/-1;
+}
+
+footer {
+	grid-column: 1/-1;
 }
