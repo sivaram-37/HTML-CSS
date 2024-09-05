@@ -46,8 +46,6 @@ p {
 a:link,
 a:visited {
 	font-size: 18px;
-	display: inline-block;
-	margin-top: 10px;
 	margin-right: 20px;
 	text-decoration: none;
 	color: #1098ad;
@@ -80,10 +78,10 @@ a:active {
 	right: -30px;
 }
 
-.posted-by {
+.author-info {
 	font-size: 18px;
 	font-style: italic;
-	margin-bottom: 20px;
+	margin-bottom: 0;
 }
 
 .img-post {
@@ -123,12 +121,13 @@ p a:link {
 aside {
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
-	width: 500px;
 	background-color: #f7f7f7;
 }
 
 .related {
 	list-style: none;
+	margin-left: 0;
+	padding: 40px 20px;
 }
 
 h4 {
@@ -138,14 +137,17 @@ h4 {
 	text-align: center;
 }
 
-aside a:link {
-	margin-left: 5px;
+.related-post img {
+	margin-right: 10px;
+}
+
+.related-link:link {
 	font-size: 20px;
 }
 
-aside p {
-	font-size: 18px;
-	font-weight: bold;
+.related-author {
+	font-size: 16px;
+	font-style: italic;
 }
 
 footer p {
@@ -161,7 +163,7 @@ button {
 }
 
 /* Float */
-
+/* 
 .main-title {
 	float: left;
 }
@@ -186,12 +188,38 @@ aside {
 	float: right;
 }
 
-.related {
-	margin-left: 0;
-	padding: 40px;
-}
+
 
 footer {
 	clear: both;
 	background-color: #ffe600;
+} */
+
+/* Flex */
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.author {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+main {
+	display: flex;
+	align-items: flex-start;
+	gap: 75px;
+}
+
+aside {
+	flex: 0 0 300px;
+}
+
+.related-post {
+	display: flex;
+	margin-bottom: 20px;
 }
