@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -22,7 +23,7 @@ p {
 }
 
 .container {
-	width: 800px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
@@ -122,18 +123,15 @@ p a:link {
 aside {
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
-	margin-top: 60px;
 	width: 500px;
 	background-color: #f7f7f7;
 }
 
-aside .list {
+.related {
 	list-style: none;
-	margin-left: 50px;
-	margin-bottom: 60px;
 }
 
-aside h4 {
+h4 {
 	font-size: 20px;
 	text-transform: uppercase;
 	margin-top: 50px;
@@ -160,4 +158,40 @@ button {
 	position: absolute;
 	bottom: 50px;
 	right: 50px;
+}
+
+/* Float */
+
+.main-title {
+	float: left;
+}
+
+nav {
+	float: right;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+article {
+	width: 825px;
+	float: left;
+}
+
+aside {
+	width: 300px;
+	float: right;
+}
+
+.related {
+	margin-left: 0;
+	padding: 40px;
+}
+
+footer {
+	clear: both;
+	background-color: #ffe600;
 }
