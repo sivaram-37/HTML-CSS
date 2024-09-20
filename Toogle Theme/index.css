@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+}
+
+.toggle {
+	background-color: #ccc;
+	position: absolute;
+	top: 5vh;
+	right: 3vw;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	border: none;
+}
+
+.toggle:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+.div {
+	position: absolute;
+	top: 15vh;
+	left: 26vw;
+	text-align: center;
+	width: 50vw;
+	padding: 1rem;
+	border-radius: 2rem;
+}
+
+.div h1 {
+	color: #fff;
+	background-color: #333;
+}
